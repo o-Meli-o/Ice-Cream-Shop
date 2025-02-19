@@ -46,3 +46,11 @@ ScrollReveal().reveal(".header-content .socials", {
     ...scrollRevealOption,
     delay: 2000,
 });
+
+
+
+// Header Reveal Animation
+ScrollReveal().reveal(".popular-card", {
+    ...scrollRevealOption,
+    interval: 500,
+});

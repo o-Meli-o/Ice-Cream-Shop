@@ -206,6 +206,75 @@ header{
     background-color: var(--primary-color);
 }
 
+.popular-grid{
+    margin-top: 4rem;
+    display: grid;
+    gap: 4rem 1rem;
+}
+
+.popular-card{
+    position: relative;
+    isolation: isolate;
+}
+
+.popular-card::before{
+    position: absolute;
+    content: "";
+    bottom: 5rem;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    transition: 0.5s;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+.popular-card:hover::before{
+    height: 90%;
+}
+
+.popular-card:nth-child(1)::before{
+    background-color: #fde6f2;
+}
+.popular-card:nth-child(2)::before{
+    background-color: #eedfd9;
+}
+.popular-card:nth-child(3)::before{
+    background-color: #faeaed;
+}
+
+.popular-card img{
+    max-width: 250px;
+    margin-inline: auto;
+}
+
+.popular-card-content{
+    padding: 1rem;
+    background-color: var(--white);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+.popular-card-content h4{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.popular-card-content h3{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+@media (width > 540px) {
+    .popular-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (width > 768px) {
     nav{
         position: static;
@@ -297,5 +366,19 @@ header{
 
     .header-content .socials{
         justify-content: flex-start;
+    }
+
+    .popular-container .section-header{
+        text-align: left;
+    }
+
+    .popular-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (width > 1024px) {
+    .popular-grid{
+        gap: 2rem;
     }
 }
