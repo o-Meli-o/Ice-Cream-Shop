@@ -54,3 +54,30 @@ ScrollReveal().reveal(".popular-card", {
     ...scrollRevealOption,
     interval: 500,
 });
+
+// Discover Reveal Animation
+ScrollReveal().reveal(".discover-card img", {
+    ...scrollRevealOption,
+    origin: "left",
+});
+ScrollReveal().reveal(".discover-card:nth-child(2) img", {
+    ...scrollRevealOption,
+    origin: "right",
+});
+
+ScrollReveal().reveal(".discover-card-content h4", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+ScrollReveal().reveal(".discover-card-content .section-description", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+ScrollReveal().reveal(".discover-card-content h3", {
+    ...scrollRevealOption,
+    delay: 1500,
+});
+ScrollReveal().reveal(".discover-card-btn", {
+    ...scrollRevealOption,
+    delay: 2000,
+});
