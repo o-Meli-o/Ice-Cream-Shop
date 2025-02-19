@@ -81,3 +81,19 @@ ScrollReveal().reveal(".discover-card-btn", {
     ...scrollRevealOption,
     delay: 2000,
 });
+
+
+// Banner Reveal Animation
+ScrollReveal().reveal(".banner-content .section-header", {
+    ...scrollRevealOption,
+});
+ScrollReveal().reveal(".banner-content .section-description", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".banner-card", {
+    ...scrollRevealOption,
+    delay: 1000,
+    interval: 500,
+});
