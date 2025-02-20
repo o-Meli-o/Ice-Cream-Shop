@@ -97,3 +97,17 @@ ScrollReveal().reveal(".banner-card", {
     delay: 1000,
     interval: 500,
 });
+
+
+// Subscription Reveal Animation
+ScrollReveal().reveal(".subscribe-content .section-header", {
+    ...scrollRevealOption,
+});
+ScrollReveal().reveal(".subscribe-content .section-description", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+ScrollReveal().reveal(".subscribe-content form", {
+    ...scrollRevealOption,
+    delay: 1000,
+});

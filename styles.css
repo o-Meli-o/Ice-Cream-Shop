@@ -363,6 +363,37 @@ header{
     text-align: center;
 }
 
+.subscribe-content{
+    padding: 5rem 1rem;
+    background-color: #fde6f2;
+}
+
+.subscribe-content .section-description{
+    margin-block: 1rem 2rem;
+    margin-inline: auto;
+    max-width: 600px;
+}
+
+.subscribe-content form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 2rem;
+    flex-direction: column;
+}
+
+.subscribe-content input{
+    width: 100%;
+    max-width: 400px;
+    padding: calc(1rem - 2px);
+    font-size: 1rem;
+    color: var(--text-dark);
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+}
+
 @media (width > 540px) {
     .popular-grid{
         grid-template-columns: repeat(2, 1fr);
@@ -374,6 +405,10 @@ header{
 
     .banner-image{
         min-height: 300px;
+    }
+
+    .subscribe-content form{
+        flex-direction: row;
     }
 
 }
