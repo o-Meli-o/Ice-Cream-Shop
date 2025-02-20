@@ -394,6 +394,53 @@ header{
     border-radius: 5px;
 }
 
+.footer{
+    background-color: var(--extra-light);
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem 2rem;
+}
+
+.footer-col{
+    text-align: center;
+}
+
+.footer-col .logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.footer-col .logo span{
+    color: var(--primary-color);
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-links a{
+    font-weight: 500;
+    color: var(--text-dark);
+    white-space: nowrap;
+}
+
+.footer-links a:hover{
+    color: var(--primary-color);
+}
+
+.footer-bar{
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--text-dark);
+    text-align: center;
+}
+
 @media (width > 540px) {
     .popular-grid{
         grid-template-columns: repeat(2, 1fr);
@@ -558,6 +605,28 @@ header{
 
     .banner-content :is(.section-header, .section-description){
         text-align: left;
+    }
+
+    .footer-container{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-col:nth-child(1),
+    .footer-col:nth-child(3){
+        flex: 1;
+        text-align: left;
+    }
+
+    .footer-links{
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .footer-col .socials{
+        justify-content: flex-end;
     }
 }
 
